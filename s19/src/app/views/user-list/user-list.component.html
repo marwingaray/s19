@@ -1,0 +1,18 @@
+<section>
+    <pre>
+        <!-- {{ lista | json }} -->
+    </pre>
+    <h2 class="text-center">Mi lista</h2>
+    <section class="container-sm">
+        <button (click)="listaConInterceptor()">Mostrar lista Interceptor</button>
+        <pre>
+            <!-- {{response | json}} -->
+        </pre>
+        <section class="row ">
+            <section class="col m-1 col-sm-2 p-2 border w-200" *ngFor="let item of listado">
+                <h3 class="bg-warning text-center">{{item.id + " " + item.userId}}</h3>
+                <p>{{item.title}}</p>
+            </section>
+        </section>
+    </section>
+</section>
